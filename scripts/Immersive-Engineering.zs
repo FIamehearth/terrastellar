@@ -1,7 +1,11 @@
 import mods.immersiveengineering.MetalPress;
-import crafttweaker.item.IItemStack;
-import crafttweaker.item.IIngredient;
-import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.IItemStack;        
+import crafttweaker.item.IIngredient;       
+import crafttweaker.oredict.IOreDictEntry;  
+import mods.immersiveengineering.Fermenter; 
+import mods.immersiveengineering.Crusher;   
+import mods.immersiveengineering.Squeezer;  
+
 val creosote = <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>);
 
 //#Removals
