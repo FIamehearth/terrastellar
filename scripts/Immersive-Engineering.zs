@@ -111,7 +111,24 @@ mods.immersiveengineering.MetalPress.addRecipe(plateOutput[i], sheetInput[i], <i
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/schist>, <tfc:gravel/schist>, 512);
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/gneiss>, <tfc:gravel/gneiss>, 512);
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/marble>, <tfc:gravel/marble>, 512);
-
+      //fermenter                                                                                                                                                      
+var fruitTfc = [<tfc:food/banana>, <tfc:food/blackberry>, <tfc:food/blueberry>, <tfc:food/bunch_berry>, <tfc:food/cherry>,                                       
+<tfc:food/cloud_berry>, <tfc:food/cranberry>, <tfc:food/gooseberry>, <tfc:food/elderberry>, <tfc:food/green_apple>, <tfc:food/lemon>,                            
+<tfc:food/olive>, <tfc:food/orange>, <tfc:food/peach>, <tfc:food/plum>, <tfc:food/raspberry>, <tfc:food/red_apple>, <tfc:food/snow_berry>, <tfc:food/strawberry>,
+<tfc:food/wintergreen_berry>] as IItemStack[];                                                                                                                   
+                                                                                                                                                                 
+var veggieTfc = [<tfc:food/beet>, <tfc:food/cabbage>, <tfc:food/carrot>, <tfc:food/garlic>, <tfc:food/green_bean>, <tfc:food/green_bell_pepper>,                 
+<tfc:food/onion>, <tfc:food/potato>, <tfc:food/red_bell_pepper>, <tfc:food/seaweed>, <tfc:food/soybean>, <tfc:food/squash>, <tfc:food/tomato>,                   
+<tfc:food/yellow_bell_pepper>] as IItemStack[];                                                                                                                  
+                                                                                                                                                                 
+      //fruit                                                                                                                                                    
+for i, item in fruitTfc{                                                                                                                                         
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol>*40, fruitTfc[i], 512);                                                                      
+}                                                                                                                                                                
+     //vegetables                                                                                                                                                
+for i, item in veggieTfc{                                                                                                                                        
+mods.immersiveengineering.Fermenter.addRecipe(null, <liquid:ethanol>*40, veggieTfc[i], 512);                                                                     
+}                                                                                                                                                                
 
 
 
