@@ -54,7 +54,7 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:7>);
   [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>],
   [<tfc:fire_bricks>, <tfctech:metal/steel_bolt>, <tfc:fire_bricks>],
   [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>]]);
-#plate recipes
+//#plate recipes
 
 var sheetInput = [<tfc:metal/sheet/wrought_iron>, <tfc:metal/sheet/copper>, <tfc:metal/sheet/aluminium>,
 <tfc:metal/sheet/lead>, <tfc:metal/sheet/silver>, <tfc:metal/sheet/nickel>, <tfc:metal/sheet/uranium>, <tfc:metal/sheet/constantan>,
