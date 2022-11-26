@@ -2,6 +2,7 @@ import mods.immersiveengineering.MetalPress;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+val creosote = <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>);
 
 //#Removals
 recipes.remove(<immersiveengineering:stone_decoration>);
@@ -55,6 +56,10 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:7>);
   [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>],
   [<tfc:fire_bricks>, <tfctech:metal/steel_bolt>, <tfc:fire_bricks>],
   [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>]]);
+  recipes.addShaped("tnfc_immersive_treatedwood", <immersiveengineering:treated_wood> * 8, [
+	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+	[<ore:plankWood>, creosote, <ore:plankWood>], 
+	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
 //#plate recipes
 
 var sheetInput = [<tfc:metal/sheet/wrought_iron>, <tfc:metal/sheet/copper>, <tfc:metal/sheet/aluminium>,
