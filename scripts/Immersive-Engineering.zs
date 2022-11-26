@@ -33,6 +33,7 @@ recipes.remove(<immersive_energy:metal:7>);      mods.immersiveengineering.Metal
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:1>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:2>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:3>);
+  mods.immersiveengineering.Crusher.removeRecipe(<tfc:powder/flux>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:0>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:1>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:2>);
@@ -111,6 +112,10 @@ mods.immersiveengineering.MetalPress.addRecipe(plateOutput[i], sheetInput[i], <i
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/schist>, <tfc:gravel/schist>, 512);
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/gneiss>, <tfc:gravel/gneiss>, 512);
       mods.immersiveengineering.Crusher.addRecipe(<tfc:sand/marble>, <tfc:gravel/marble>, 512);
+      mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 8, <tfc:rock/limestone>, 512);
+      mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 8, <tfc:rock/dolomite>, 512);
+      mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 8, <tfc:rock/chalk>, 512);
+      mods.immersiveengineering.Crusher.addRecipe(<tfc:powder/flux> * 8, <tfc:rock/marble>, 512);
       //fermenter                                                                                                                                                      
 var fruitTfc = [<tfc:food/banana>, <tfc:food/blackberry>, <tfc:food/blueberry>, <tfc:food/bunch_berry>, <tfc:food/cherry>,                                       
 <tfc:food/cloud_berry>, <tfc:food/cranberry>, <tfc:food/gooseberry>, <tfc:food/elderberry>, <tfc:food/green_apple>, <tfc:food/lemon>,                            
