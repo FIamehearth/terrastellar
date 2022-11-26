@@ -47,6 +47,21 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:4>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:5>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:6>);
 mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:7>);
+
+var immersiveIngots = [<immersiveengineering:metal:0>, <immersiveengineering:metal:1>,                                                                                                
+ <immersiveengineering:metal:2>,  <immersiveengineering:metal:3>,  <immersiveengineering:metal:4>,  <immersiveengineering:metal:5>,                                                   
+  <immersiveengineering:metal:6>,  <immersiveengineering:metal:7>,  <immersiveengineering:metal:8>] as IItemStack[];                                                                  
+for i, item in immersiveIngots{                                                                                                                                                       
+mods.jei.JEI.removeAndHide(immersiveIngots[i]);                                                                                                                                       
+}                                                                                                                                                                                     
+                                                                                                                                                                                      
+var immersiveDusts = [<immersiveengineering:metal:9>,  <immersiveengineering:metal:10>,  <immersiveengineering:metal:11>,  <immersiveengineering:metal:12>,                           
+ <immersiveengineering:metal:13>,  <immersiveengineering:metal:14>,  <immersiveengineering:metal:15>,  <immersiveengineering:metal:16>,  <immersiveengineering:metal:17>,             
+  <immersiveengineering:metal:18>,  <immersiveengineering:metal:19>] as IItemStack[];                                                                                                 
+                                                                                                                                                                                      
+for i, item in immersiveDusts{                                                                                                                                                        
+mods.jei.JEI.removeAndHide(immersiveDusts[i]);                                                                                                                                        
+}                                                                                                                                                                                     
 //#Additions
   recipes.addShaped("Blast Brick", <immersiveengineering:stone_decoration:1> * 4, [
   [<tfctech:metal/red_steel_screw>, <tfc:fire_bricks>, <tfctech:metal/red_steel_screw>],
