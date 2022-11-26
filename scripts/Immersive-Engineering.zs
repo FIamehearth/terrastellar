@@ -139,7 +139,7 @@ var tfSeeds = [<tfc:crop/seeds/barley>, <tfc:crop/seeds/maize>, <tfc:crop/seeds/
 <tfc:crop/seeds/jute>, <firmalife:crop/seeds/pumpkin>, <firmalife:crop/seeds/melon>] as IItemStack[];                                               
                                                                                                                                                     
 for i, item in tfSeeds{                                                                                                                             
-mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plant_oil>*80, tfSeeds[i], 512);                                                         
+mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>*80, tfSeeds[i], 512);                                                         
 }                                                                                                                                                   
 
 
