@@ -33,6 +33,14 @@ recipes.remove(<immersive_energy:metal:7>);      mods.immersiveengineering.Metal
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:1>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:2>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:material:3>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:0>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:1>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:2>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:3>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:4>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:5>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:6>);
+mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:mold:7>);
 //#Additions
   recipes.addShaped("Blast Brick", <immersiveengineering:stone_decoration:1> * 4, [
   [<tfctech:metal/red_steel_screw>, <tfc:fire_bricks>, <tfctech:metal/red_steel_screw>],
