@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.Anvil;
 
 val plateDict = <ore:metalPlates>;
 
@@ -29,3 +30,9 @@ doublePlateDict.addItems([<tfc:metal/double_sheet/bismuth>, <tfc:metal/double_sh
 <tfc:metal/double_sheet/tungsten_steel>, <tfc:metal/double_sheet/zirconium>, <tfc:metal/double_sheet/zircaloy>, <tfc:metal/double_sheet/aluminium>, <tfc:metal/double_sheet/beryllium>,
 <tfc:metal/double_sheet/aluminium_brass>, <tfc:metal/double_sheet/beryllium_copper>, <tfc:metal/double_sheet/boron>, <tfc:metal/double_sheet/ferroboron>, <tfc:metal/double_sheet/tough_alloy>]
 );
+
+#//Anvil
+Anvil.addRecipe("platemold", <tfc:metal/sheet/steel>, <immersiveengineering:mold>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+Anvil.addRecipe("gearmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:1>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+Anvil.addRecipe("rodmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:2>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+Anvil.addRecipe("wiremold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:4>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
