@@ -79,6 +79,21 @@ mods.jei.JEI.removeAndHide(immersiveDusts[i]);
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
 	[<ore:plankWood>, creosote, <ore:plankWood>], 
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+  recipes.addShaped("Heavy Engineering Block", <immersiveengineering:metal_decoration0:5> * 2, [
+	[<ore:metalPlates>, <ore:screwSteel>, <ore:metalPlates>], 
+	[<minecraft:piston>, <ore:gearElectrum>, <minecraft:piston>], 
+	[<ore:metalPlates>, <ore:screwSteel>, <ore:metalPlates>]
+]);
+	recipes.addShaped("Light Engineering Block", <immersiveengineering:metal_decoration0:4>, [
+	[<ore:sheetWroughtIron>, <ore:screwWroughtIron>, <ore:sheetWroughtIron>], 
+	[<ore:gearCopper>, <ore:gearCopper>, <ore:gearCopper>], 
+	[<ore:sheetWroughtIron>, <ore:screwWroughtIron>, <ore:sheetWroughtIron>]
+]);
+	recipes.addShaped("Redstone Engineering Block", <immersiveengineering:metal_decoration0:3>, [
+	[<ore:sheetWroughtIron>, <ore:dustRedstone>, <ore:sheetWroughtIron>], 
+	[<ore:dustRedstone>, <ore:wireCopper>, <ore:dustRedstone>], 
+	[<ore:sheetWroughtIron>, <ore:dustRedstone>, <ore:sheetWroughtIron>]
+]);
 //#plate recipes
 
 var sheetInput = [<tfc:metal/sheet/wrought_iron>, <tfc:metal/sheet/copper>, <tfc:metal/sheet/aluminium>,
