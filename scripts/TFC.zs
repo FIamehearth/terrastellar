@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.terrafirmacraft.Anvil;
 
 val plateDict = <ore:metalPlates>;
+val ironDict = <ore:ingotIron>;
 
 plateDict.addItems([<tfc:metal/sheet/bismuth>, <tfc:metal/sheet/bismuth_bronze>, <tfc:metal/sheet/black_bronze>,
 <tfc:metal/sheet/brass>, <tfc:metal/sheet/bronze>, <tfc:metal/sheet/copper>, <tfc:metal/sheet/gold>, <tfc:metal/sheet/lead>,
@@ -30,6 +31,7 @@ doublePlateDict.addItems([<tfc:metal/double_sheet/bismuth>, <tfc:metal/double_sh
 <tfc:metal/double_sheet/tungsten_steel>, <tfc:metal/double_sheet/zirconium>, <tfc:metal/double_sheet/zircaloy>, <tfc:metal/double_sheet/aluminium>, <tfc:metal/double_sheet/beryllium>,
 <tfc:metal/double_sheet/aluminium_brass>, <tfc:metal/double_sheet/beryllium_copper>, <tfc:metal/double_sheet/boron>, <tfc:metal/double_sheet/ferroboron>, <tfc:metal/double_sheet/tough_alloy>]
 );
+ironDict.add(<tfc:metal/ingot/wrought_iron>);
 
 #//Anvil
 Anvil.addRecipe("platemold", <tfc:metal/sheet/steel>, <immersiveengineering:mold>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
