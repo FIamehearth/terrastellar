@@ -8,7 +8,7 @@ import mods.contenttweaker.Block;
 
 //fluids
 var tungstenChloride = VanillaFactory.createFluid("molten_tungsten_chloride", Color.fromHex("6e7c60"));
-tungstenChloride.register();
+
 
 
 
@@ -17,8 +17,9 @@ tungstenChloride.register();
 var chlorideIngot = VanillaFactory.createItem("tungsten_chloride");
 var chloridePlate = VanillaFactory.createItem("tungsten_chloride_plate");
 
+//registering fluid->item->block
 
-
+tungstenChloride.register();
 
 chlorideIngot.register();
 chloridePlate.register();
