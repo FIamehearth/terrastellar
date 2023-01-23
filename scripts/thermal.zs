@@ -27,3 +27,11 @@ for i, item in thermalPlates{
  for i, item in thermalDusts{
  mods.jei.JEI.removeAndHide(thermalDusts[i]);
  }
+ 
+ 
+ //#recipes
+recipes.addShaped(0, <thermalexpansion:frame>, [
+	[<contenttweaker:tungsten_chloride_plate>, <ore:blockGlassColorless>, <contenttweaker:tungsten_chloride_plate>], 
+	[<ore:blockGlassColorless>, <ore:gearManganese>, <ore:blockGlassColorless>], 
+	[<contenttweaker:tungsten_chloride_plate>, <ore:blockGlassColorless>, <contenttweaker:tungsten_chloride_plate>]
+]);
