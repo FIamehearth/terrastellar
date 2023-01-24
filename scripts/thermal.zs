@@ -3,6 +3,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 //#removals
+recipes.remove(<thermalexpansion:frame>);
+
 var thermalPlates = [<thermalfoundation:material:32>, <thermalfoundation:material:33>, <thermalfoundation:material:320>,
 <thermalfoundation:material:321>, <thermalfoundation:material:322>, <thermalfoundation:material:323>, <thermalfoundation:material:324>, <thermalfoundation:material:325>,
 <thermalfoundation:material:326>, <thermalfoundation:material:327>, <thermalfoundation:material:328>, <thermalfoundation:material:352>, <thermalfoundation:material:353>,
