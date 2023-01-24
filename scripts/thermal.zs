@@ -3,9 +3,9 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
 //#removals
-recipes.remove(<thermalexpansion:frame>);
-recipes.remove(<thermalexpansion:frame:64>);
-
+recipes.removeByMod("thermalexpansion");
+recipes.removeByMod("thermalfoundation");
+recipes.removeByMod("thermaldynamics");
 var thermalPlates = [<thermalfoundation:material:32>, <thermalfoundation:material:33>, <thermalfoundation:material:320>,
 <thermalfoundation:material:321>, <thermalfoundation:material:322>, <thermalfoundation:material:323>, <thermalfoundation:material:324>, <thermalfoundation:material:325>,
 <thermalfoundation:material:326>, <thermalfoundation:material:327>, <thermalfoundation:material:328>, <thermalfoundation:material:352>, <thermalfoundation:material:353>,
@@ -42,4 +42,74 @@ recipes.addShaped("Device Frame", <thermalexpansion:frame:64>, [
 	[<tfc:metal/sheet/blue_steel>, <ore:blockGlassColorless>, <tfc:metal/sheet/blue_steel>], 
 	[<ore:blockGlassColorless>, <ore:gearCopper>, <ore:blockGlassColorless>], 
 	[<tfc:metal/sheet/blue_steel>, <ore:blockGlassColorless>, <tfc:metal/sheet/blue_steel>]
+]);
+recipes.addShaped("Redstone Reception Coil", <thermalfoundation:material:513>, [
+	[null, null, <immersiveengineering:wirecoil:5>], 
+	[null, <ore:stickGold>, null], 
+	[<immersiveengineering:wirecoil:5>, null, null]
+]);
+recipes.addShaped("Redstone Transmission Coil", <thermalfoundation:material:514>, [
+	[null, null, <immersiveengineering:wirecoil:5>], 
+	[null, <ore:stickSilver>, null], 
+	[<immersiveengineering:wirecoil:5>, null, null]
+]);
+recipes.addShaped("Redstone Conductance Coil", <thermalfoundation:material:515>, [
+	[null, null, <immersiveengineering:wirecoil:5>], 
+	[null, <ore:stickElectrum>, null], 
+	[<immersiveengineering:wirecoil:5>, null, null]
+]);
+recipes.addShaped("Redstone Servo", <thermalfoundation:material:512>, [
+	[null, <immersiveengineering:wirecoil:5>, null], 
+	[null, <immersiveengineering:material:8>, null], 
+	[null, <immersiveengineering:wirecoil:5>, null]
+]);
+recipes.addShaped("Saw Blade", <thermalfoundation:material:657>, [
+	[<ore:rackwheelPieceSteel>, <ore:rackwheelPieceSteel>, null], 
+	[<ore:rackwheelPieceSteel>, <ore:gearCopper>, <ore:rackwheelPieceSteel>], 
+	[null, <ore:rackwheelPieceSteel>, <ore:rackwheelPieceSteel>]
+]);
+recipes.addShaped("Redstone Furnace", <thermalexpansion:machine>, [
+	[null, <immersiveengineering:wirecoil:5>, null], 
+	[<immersiveengineering:stone_decoration:1>, <thermalexpansion:frame>, <immersiveengineering:stone_decoration:1>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Pulverizer", <thermalexpansion:machine:1>, [
+	[null, <minecraft:piston>, null], 
+	[<tfcthings:grindstone_steel>, <thermalexpansion:frame>, <tfcthings:grindstone_steel>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Sawmill", <thermalexpansion:machine:2>, [
+	[null, <thermalfoundation:material:657>, null], 
+	[<ore:plankTreatedWood>, <thermalexpansion:frame>, <ore:plankTreatedWood>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Induction Smelter", <thermalexpansion:machine:3>, [
+	[null, <ore:gearInvar>, null], 
+	[<immersiveengineering:stone_decoration:2>, <thermalexpansion:frame>, <immersiveengineering:stone_decoration:2>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Compactor", <thermalexpansion:machine:5>, [
+	[null, <minecraft:piston>, null], 
+	[<ore:ingotDoubleAnyBronze>, <thermalexpansion:frame>, <ore:ingotDoubleAnyBronze>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Magma Crucible", <thermalexpansion:machine:6>, [
+	[null, <ore:blockGlassHardened>, null], 
+	[<immersiveengineering:stone_decoration:10>, <thermalexpansion:frame>, <immersiveengineering:stone_decoration:10>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Fluid Transposer", <thermalexpansion:machine:8>, [
+	[null, <ore:bucketRedSteel>, null], 
+	[<ore:blockGlassColorless>, <thermalexpansion:frame>, <ore:blockGlassColorless>], 
+	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+]);
+recipes.addShaped("Nullifier", <thermalexpansion:device:1>, [
+	[null, <ore:bucketBlueSteel>, null], 
+	[<ore:alabasterBricks>, <thermalexpansion:frame:64>, <ore:alabasterBricks>], 
+	[<ore:gearBronze>, <thermalfoundation:material:512>, <ore:gearBronze>]
+]);
+recipes.addShaped("Vacuumulator", <thermalexpansion:device:12>, [
+	[null, <ore:blockHopper>, null], 
+	[<ore:ingotTin>, <thermalexpansion:frame:64>, <ore:ingotTin>], 
+	[<ore:gearBronze>, <thermalfoundation:material:512>, <ore:gearBronze>]
 ]);
