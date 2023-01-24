@@ -39,7 +39,7 @@ recipes.addShaped("Machine Frame", <thermalexpansion:frame>, [
 	[<contenttweaker:tungsten_chloride_plate>, <ore:blockGlassColorless>, <contenttweaker:tungsten_chloride_plate>]
 ]);
 recipes.addShaped("Device Frame", <thermalexpansion:frame:64>, [
-	[<ore:ingotBlueSteel>, <ore:blockGlassColorless>, <ore:ingotBlueSteel>], 
+	[<tfc:metal/sheet/blue_steel>, <ore:blockGlassColorless>, <tfc:metal/sheet/blue_steel>], 
 	[<ore:blockGlassColorless>, <ore:gearCopper>, <ore:blockGlassColorless>], 
-	[<ore:ingotBlueSteel>, <ore:blockGlassColorless>, <ore:ingotBlueSteel>]
+	[<tfc:metal/sheet/blue_steel>, <ore:blockGlassColorless>, <tfc:metal/sheet/blue_steel>]
 ]);
