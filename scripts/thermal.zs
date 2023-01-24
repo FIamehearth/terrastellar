@@ -32,8 +32,13 @@ for i, item in thermalPlates{
  
  
  //#recipes
-recipes.addShaped(0, <thermalexpansion:frame>, [
+recipes.addShaped("Machine Frame", <thermalexpansion:frame>, [
 	[<contenttweaker:tungsten_chloride_plate>, <ore:blockGlassColorless>, <contenttweaker:tungsten_chloride_plate>], 
 	[<ore:blockGlassColorless>, <ore:gearManganese>, <ore:blockGlassColorless>], 
 	[<contenttweaker:tungsten_chloride_plate>, <ore:blockGlassColorless>, <contenttweaker:tungsten_chloride_plate>]
+]);
+recipes.addShaped("Device Frame", <thermalexpansion:frame:64>, [
+	[<ore:ingotBlueSteel>, <ore:blockGlassColorless>, <ore:ingotBlueSteel>], 
+	[<ore:blockGlassColorless>, <ore:gearCopper>, <ore:blockGlassColorless>], 
+	[<ore:ingotBlueSteel>, <ore:blockGlassColorless>, <ore:ingotBlueSteel>]
 ]);
