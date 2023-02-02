@@ -5,6 +5,7 @@ import mods.terrafirmacraft.Anvil;
 
 val plateDict = <ore:metalPlates>;
 val ironDict = <ore:ingotIron>;
+val stickDict = <ore:stickWood>;
 
 plateDict.addItems([<tfc:metal/sheet/bismuth>, <tfc:metal/sheet/bismuth_bronze>, <tfc:metal/sheet/black_bronze>,
 <tfc:metal/sheet/brass>, <tfc:metal/sheet/bronze>, <tfc:metal/sheet/copper>, <tfc:metal/sheet/gold>, <tfc:metal/sheet/lead>,
@@ -32,12 +33,14 @@ doublePlateDict.addItems([<tfc:metal/double_sheet/bismuth>, <tfc:metal/double_sh
 <tfc:metal/double_sheet/aluminium_brass>, <tfc:metal/double_sheet/beryllium_copper>, <tfc:metal/double_sheet/boron>, <tfc:metal/double_sheet/ferroboron>, <tfc:metal/double_sheet/tough_alloy>]
 );
 ironDict.add(<tfc:metal/ingot/wrought_iron>);
+stickDict.remove(<tfcflorae:tools/walking_stick>);
 
 #//Anvil
 Anvil.addRecipe("platemold", <tfc:metal/sheet/steel>, <immersiveengineering:mold>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("gearmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:1>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("rodmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:2>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("wiremold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:4>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+
 
 recipes.remove(<hotornot:wooden_tongs>);
 recipes.addShaped("Wood Tongs", <hotornot:wooden_tongs>, [

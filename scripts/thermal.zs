@@ -90,7 +90,7 @@ recipes.addShaped("Induction Smelter", <thermalexpansion:machine:3>, [
 ]);
 recipes.addShaped("Compactor", <thermalexpansion:machine:5>, [
 	[null, <minecraft:piston>, null], 
-	[<ore:ingotDoubleAnyBronze>, <thermalexpansion:frame>, <ore:ingotDoubleAnyBronze>], 
+	[<ore:ingotDoubleBlackBronze>, <thermalexpansion:frame>, <ore:ingotDoubleBlackBronze>], 
 	[<ore:gearElectrum>, <thermalfoundation:material:513>, <ore:gearElectrum>]
 ]);
 recipes.addShaped("Magma Crucible", <thermalexpansion:machine:6>, [

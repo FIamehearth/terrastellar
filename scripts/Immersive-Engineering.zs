@@ -184,9 +184,7 @@ var tfSeeds = [<tfc:crop/seeds/barley>, <tfc:crop/seeds/maize>, <tfc:crop/seeds/
                                                                                                                                                     
 for i, item in tfSeeds{                                                                                                                             
 mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>*80, tfSeeds[i], 512);                                                         
-}                                                                                                                                                   
-
-
+}                                                                                                                                                 
 
 
 
