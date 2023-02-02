@@ -45,3 +45,4 @@ recipes.addShaped("Wood Tongs", <hotornot:wooden_tongs>, [
 	[null, <ore:string>, null], 
 	[null, null, null]
 ]);
+recipes.remove(<tfcflorae:tools/walking_stick>);
