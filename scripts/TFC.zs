@@ -38,3 +38,10 @@ Anvil.addRecipe("platemold", <tfc:metal/sheet/steel>, <immersiveengineering:mold
 Anvil.addRecipe("gearmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:1>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("rodmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:2>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("wiremold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:4>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+
+recipes.remove(<hotornot:wooden_tongs>);
+recipes.addShaped("Wood Tongs", <hotornot:wooden_tongs>, [
+	[<ore:stickWood>, null, <ore:stickWood>], 
+	[null, <ore:string>, null], 
+	[null, null, null]
+]);
