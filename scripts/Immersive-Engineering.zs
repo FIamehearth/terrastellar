@@ -25,6 +25,9 @@ recipes.remove(<immersiveengineering:metal:39>); mods.immersiveengineering.Metal
 recipes.remove(<immersiveengineering:metal:40>); mods.immersiveengineering.MetalPress.removeRecipe(<immersiveengineering:metal:40>);
 recipes.remove(<immersive_energy:metal:6>);      mods.immersiveengineering.MetalPress.removeRecipe(<immersive_energy:metal:6>);
 recipes.remove(<immersive_energy:metal:7>);      mods.immersiveengineering.MetalPress.removeRecipe(<immersive_energy:metal:7>);
+recipes.remove(<immersiveengineering:metal_decoration0:3>); 
+recipes.remove(<immersiveengineering:metal_decoration0:4>); 
+recipes.remove(<immersiveengineering:metal_decoration0:5>); 
   mods.jei.JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:axe_steel>);
