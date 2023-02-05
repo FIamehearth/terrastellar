@@ -80,9 +80,9 @@ mods.jei.JEI.removeAndHide(immersiveDusts[i]);
 	[<ore:plankWood>, creosote, <ore:plankWood>], 
 	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
   recipes.addShaped("Heavy Engineering Block", <immersiveengineering:metal_decoration0:5> * 2, [
-	[<ore:metalPlates>, <ore:screwSteel>, <ore:metalPlates>], 
+	[<ore:sheetSteel>, <ore:screwSteel>, <ore:sheetSteel>], 
 	[<minecraft:piston>, <ore:gearElectrum>, <minecraft:piston>], 
-	[<ore:metalPlates>, <ore:screwSteel>, <ore:metalPlates>]
+	[<ore:sheetSteel>, <ore:screwSteel>, <ore:sheetSteel>]
 ]);
 	recipes.addShaped("Light Engineering Block", <immersiveengineering:metal_decoration0:4>, [
 	[<ore:sheetWroughtIron>, <ore:screwWroughtIron>, <ore:sheetWroughtIron>], 
