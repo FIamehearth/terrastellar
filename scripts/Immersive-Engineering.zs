@@ -27,7 +27,11 @@ recipes.remove(<immersive_energy:metal:6>);      mods.immersiveengineering.Metal
 recipes.remove(<immersive_energy:metal:7>);      mods.immersiveengineering.MetalPress.removeRecipe(<immersive_energy:metal:7>);
 recipes.remove(<immersiveengineering:metal_decoration0:3>); 
 recipes.remove(<immersiveengineering:metal_decoration0:4>); 
-recipes.remove(<immersiveengineering:metal_decoration0:5>); 
+recipes.remove(<immersiveengineering:metal_decoration0:5>);
+recipes.remove(<immersiveengineering:material:20>);
+recipes.remove(<immersiveengineering:material:21>);
+recipes.remove(<immersiveengineering:material:22>);
+recipes.remove(<immersiveengineering:material:23>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:axe_steel>);
@@ -66,14 +70,15 @@ for i, item in immersiveDusts{
 mods.jei.JEI.removeAndHide(immersiveDusts[i]);                                                                                                                                        
 }                                                                                                                                                                                     
 //#Additions
-  recipes.addShaped("Blast Brick", <immersiveengineering:stone_decoration:1> * 4, [
+  recipes.addShaped("Coke Brick", <immersiveengineering:stone_decoration:0> * 4, [
   [<tfctech:metal/red_steel_screw>, <tfc:fire_bricks>, <tfctech:metal/red_steel_screw>],
   [<tfc:fire_bricks>, <tfctech:metal/red_steel_strip> , <tfc:fire_bricks>],
   [<tfctech:metal/red_steel_screw>, <tfc:fire_bricks>, <tfctech:metal/red_steel_screw>]]);
-  recipes.addShaped("Coke Brick", <immersiveengineering:stone_decoration:0> * 4, [
-  [<tfctech:metal/steel_screw>, <tfc:fire_bricks>, <tfctech:metal/steel_screw>],
-  [<tfc:fire_bricks>, <tfctech:metal/steel_strip>, <tfc:fire_bricks>],
-  [<tfctech:metal/steel_screw>, <tfc:fire_bricks>, <tfctech:metal/steel_screw>]]);
+  recipes.addShaped("Blast Brick", <immersiveengineering:stone_decoration:1> * 4, [
+	[<ore:screwToughAlloy>, <tfc:fire_bricks>, <ore:screwToughAlloy>], 
+	[<tfc:fire_bricks>, <ore:plateSteel>, <tfc:fire_bricks>], 
+	[<ore:screwToughAlloy>, <tfc:fire_bricks>, <ore:screwToughAlloy>]
+]);
   recipes.addShaped("Kiln Brick", <immersiveengineering:stone_decoration:10> * 4, [
   [<tfc:fire_bricks>, <tfctech:metal/steel_screw>, <tfc:fire_bricks>],
   [<tfc:fire_bricks>, <tfctech:metal/steel_bolt>, <tfc:fire_bricks>],
