@@ -113,3 +113,4 @@ recipes.addShaped("Vacuumulator", <thermalexpansion:device:12>, [
 	[<ore:ingotTin>, <thermalexpansion:frame:64>, <ore:ingotTin>], 
 	[<ore:gearBronze>, <thermalfoundation:material:512>, <ore:gearBronze>]
 ]);
+mods.thermalexpansion.Compactor.addPressRecipe(<contenttweaker:tungsten_chloride_plate>, <contenttweaker:tungsten_chloride>, 4000);

@@ -1,8 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
+import mods.terrafirmacraft.ItemRegistry;
 import mods.terrafirmacraft.Anvil;
-
 val plateDict = <ore:metalPlates>;
 val ironDict = <ore:ingotIron>;
 val aluWire = <ore:wireAluminum>;
@@ -40,6 +40,8 @@ Anvil.addRecipe("platemold", <tfc:metal/sheet/steel>, <immersiveengineering:mold
 Anvil.addRecipe("gearmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:1>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("rodmold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:2>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
 Anvil.addRecipe("wiremold", <tfc:metal/sheet/steel>, <immersiveengineering:mold:4>, 3, "general", "DRAW_LAST", "PUNCH_SECOND_LAST", "PUNCH_THIRD_LAST");
+mods.terrafirmacraft.Welding.addRecipe("Tungsten Chloride Double Ingot", <contenttweaker:tungsten_chloride>, <contenttweaker:tungsten_chloride>,<contenttweaker:tungsten_chloride_di>,6, null);
+Anvil.addRecipe("tungstenchloridesheet", <contenttweaker:tungsten_chloride_di>, <contenttweaker:tungsten_chloride_sheet>, 6, "general", "HIT_LAST", "HIT_SECOND_LAST", "HIT_THIRD_LAST");
 
 
 recipes.remove(<hotornot:wooden_tongs>);

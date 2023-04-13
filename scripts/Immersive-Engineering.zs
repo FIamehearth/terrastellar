@@ -199,8 +199,8 @@ mods.immersiveengineering.Squeezer.addRecipe(null, <liquid:plantoil>*80, tfSeeds
 mods.immersiveengineering.Refinery.addRecipe(<liquid:molten_tungsten_chloride>*144, <liquid:tungsten>*144, <liquid:chlorine>*20, 2048);
 
 //electrocruciblebattery
-mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(<liquid:chlorine>*20, null, null, <contenttweaker:tungsten_chloride>, <liquid:molten_tungsten_chloride>*144, 2048, 500);
-
-
+mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(<liquid:chlorine>*5, null, null, <contenttweaker:tungsten_chloride>, <liquid:molten_tungsten_chloride>*144, 524288, 500);
+//metal press
+mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:tungsten_chloride_plate>, <contenttweaker:tungsten_chloride_sheet>, <immersiveengineering:mold>, 2000);
 
 
