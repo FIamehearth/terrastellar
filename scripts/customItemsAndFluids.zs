@@ -14,9 +14,11 @@ var tungstenChloride = VanillaFactory.createFluid("molten_tungsten_chloride", Co
 //items
 var chlorideIngot = VanillaFactory.createItem("tungsten_chloride");
 var chloridePlate = VanillaFactory.createItem("tungsten_chloride_plate");
+var chlorideSheet = VanillaFactory.createItem("tungsten_chloride_sheet");
 
 //registering
 
 tungstenChloride.register();
 chlorideIngot.register();
 chloridePlate.register();
+chlorideSheet.register();
