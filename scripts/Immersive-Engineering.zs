@@ -4,7 +4,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;  
 import mods.immersiveengineering.Fermenter; 
 import mods.immersiveengineering.Crusher;   
-import mods.immersiveengineering.Squeezer;  
+import mods.immersiveengineering.Squeezer;
+import mods.immersiveengineering.CokeOven;  
 
 val creosote = <tfc:wooden_bucket>.withTag({Fluid: {FluidName: "creosote", Amount: 1000}}).transformReplace(<tfc:wooden_bucket>);
 
@@ -32,6 +33,10 @@ recipes.remove(<immersiveengineering:material:20>);
 recipes.remove(<immersiveengineering:material:21>);
 recipes.remove(<immersiveengineering:material:22>);
 recipes.remove(<immersiveengineering:material:23>);
+recipes.remove(<immersiveengineering:tool>);
+recipes.remove(<immersiveengineering:metal_device1:6>);
+recipes.remove(<immersiveengineering:wirecoil:6>);
+recipes.remove(<immersiveengineering:wirecoil:7>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:pickaxe_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:shovel_steel>);
   mods.jei.JEI.removeAndHide(<immersiveengineering:axe_steel>);
@@ -101,6 +106,45 @@ mods.jei.JEI.removeAndHide(immersiveDusts[i]);
 	[<ore:sheetWroughtIron>, <ore:dustRedstone>, <ore:sheetWroughtIron>], 
 	[<ore:dustRedstone>, <ore:wireCopper>, <ore:dustRedstone>], 
 	[<ore:sheetWroughtIron>, <ore:dustRedstone>, <ore:sheetWroughtIron>]
+]);
+recipes.addShaped("blueengineershammer", <immersiveengineering:tool>, [
+	[null, <ore:ingotBlueSteel>, <ore:string>], 
+	[null, <ore:stickWood>, <ore:ingotBlueSteel>], 
+	[<ore:stickWood>, null, null]
+]);
+recipes.addShaped("redengineershammer", <immersiveengineering:tool>, [
+	[null, <ore:ingotRedSteel>, <ore:string>], 
+	[null, <ore:stickWood>, <ore:ingotRedSteel>], 
+	[<ore:stickWood>, null, null]
+]);
+ recipes.addShaped("treatedwood", <immersiveengineering:treated_wood> * 8, [
+ [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
+ [<ore:plankWood>, creosote, <ore:plankWood>], 
+ [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
+recipes.addShaped("kinetic dynamo", <immersiveengineering:metal_device1:2>, [
+	[<ore:dustRedstone>, <ore:ingotIron>, <ore:dustRedstone>], 
+	[<immersiveengineering:metal_decoration0>, <ore:ingotIron>, <immersiveengineering:metal_decoration0>], 
+	[<ore:dustRedstone>, <ore:ingotIron>, <ore:dustRedstone>]
+]);
+recipes.addShaped("Tough Fabric", <immersiveengineering:material:5>, [
+	[null, <ore:clothHighQuality>, null], 
+	[<ore:clothHighQuality>, <ore:stickTreatedWood>, <ore:clothHighQuality>], 
+	[null, <ore:clothHighQuality>, null]
+]);
+recipes.addShaped("Pipe", <immersiveengineering:metal_device1:6>, [
+	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>], 
+	[<ore:rubber>, <ore:rubber>, <ore:rubber>], 
+	[<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]
+]);
+recipes.addShaped("Insulted LV Wire", <immersiveengineering:wirecoil:6>, [
+	[<ore:rubber>, <immersiveengineering:wirecoil>, <ore:rubber>], 
+	[<immersiveengineering:wirecoil>, null, <immersiveengineering:wirecoil>], 
+	[<ore:rubber>, <immersiveengineering:wirecoil>, <ore:rubber>]
+]);
+recipes.addShaped("Insulated MV Wire", <immersiveengineering:wirecoil:7>, [
+	[<ore:rubber>, <immersiveengineering:wirecoil:1>, <ore:rubber>], 
+	[<immersiveengineering:wirecoil:1>, <forge:bucketfilled>, <immersiveengineering:wirecoil:1>], 
+	[<ore:rubber>, <immersiveengineering:wirecoil:1>, <ore:rubber>]
 ]);
 //#plate recipes
 
@@ -202,5 +246,7 @@ mods.immersiveengineering.Refinery.addRecipe(<liquid:molten_tungsten_chloride>*1
 mods.immersivetechnology.ElectrolyticCrucibleBattery.addRecipe(<liquid:chlorine>*5, null, null, <contenttweaker:tungsten_chloride>, <liquid:molten_tungsten_chloride>*144, 524288, 500);
 //metal press
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:tungsten_chloride_plate>, <contenttweaker:tungsten_chloride_sheet>, <immersiveengineering:mold>, 2000);
-
+//Coke oven
+mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6>, 50, <tfc:ore/bituminous_coal>, 2400);
+mods.immersiveengineering.CokeOven.addRecipe(<immersiveengineering:material:6>, 50, <tfc:ore/lignite>, 2400);
 

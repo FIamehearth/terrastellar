@@ -50,3 +50,5 @@ recipes.addShaped("Wood Tongs", <hotornot:wooden_tongs>, [
 	[null, <ore:string>, null], 
 	[null, null, null]
 ]);
+
+#//Barrel
